@@ -1,0 +1,8 @@
+3MVG9g9rbsTkKnAUI40OKsRe75cwihiHMmrjQHlOgot.LVVk3U1aJUZw4mX9iWgw3OsOrPAmM3B2JXdJEuIw0
+
+
+set CONSUMER_KEY=3MVG9g9rbsTkKnAUI40OKsRe75cwihiHMmrjQHlOgot.LVVk3U1aJUZw4mX9iWgw3OsOrPAmM3B2JXdJEuIw0
+set JWT_KEY_FILE=C:\SFDCDX\GitHub\sfdx-travisci\certificates\server.key
+set HUB_USERNAME=manit.jain.dx@gmail.com
+
+sfdx force:auth:jwt:grant --clientid %CONSUMER_KEY% --username %HUB_USERNAME% --jwtkeyfile %JWT_KEY_FILE% --setdefaultdevhubusername
